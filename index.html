@@ -4,140 +4,264 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Esra Berge Beauty | Beşiktaş</title>
-  <meta name="description" content="Esra Berge Beauty için Beşiktaş lokasyonunda hizmetler, galeri, iletişim ve hızlı randevu bilgileri.">
+  <meta name="description" content="Esra Berge Beauty için Beşiktaş lokasyonunda hizmetler, galeri, değerlendirmeler ve hızlı randevu alanı.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&family=Questrial&display=swap" rel="stylesheet">
-  <style>:root{--bg:#fff4f6;--surface:#ffffff;--text:#3e2430;--muted:#8a6072;--accent:#d1468a;--accent2:#ff9fca;--glow:rgba(209,70,138,.18);--head:"Playfair Display", serif;--body:"Nunito Sans", sans-serif;--grad:linear-gradient(145deg,#fff8fb 0%,#ffe6f1 52%,#ffd8ea 100%)}
-*{box-sizing:border-box}
-html,body{margin:0;padding:0}
-body{font-family:var(--body);background:var(--bg);color:var(--text);line-height:1.6}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
-.site{min-height:100vh;overflow-x:hidden}
-.topbar{display:flex;justify-content:space-between;align-items:center;padding:18px 5vw;border-bottom:1px solid color-mix(in srgb,var(--accent) 28%,transparent);background:color-mix(in srgb,var(--surface) 88%,transparent);position:sticky;top:0;backdrop-filter:blur(10px);z-index:20}
-.brand{display:flex;align-items:center;gap:16px;min-height:72px}
-.brand-logo{max-height:76px;width:auto;height:auto}
-.brand-name{font-family:var(--head);font-size:clamp(1.2rem,2.3vw,2.2rem);letter-spacing:.05em}
-.actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;border:1px solid color-mix(in srgb,var(--accent) 70%,transparent);font-weight:600;transition:all .25s ease}
-.btn.primary{background:linear-gradient(110deg,var(--accent),var(--accent2));color:#fff;border:none;box-shadow:0 10px 30px var(--glow)}
-.btn:hover{transform:translateY(-2px)}
-main{display:grid;gap:64px;padding:24px 5vw 70px}
-.hero{position:relative;border-radius:30px;overflow:hidden;background:var(--grad);box-shadow:0 24px 60px color-mix(in srgb,var(--accent) 20%,transparent)}
-.hero .badge{position:absolute;right:24px;top:24px;background:color-mix(in srgb,var(--surface) 82%,transparent);padding:8px 14px;border-radius:999px;font-weight:700;font-size:.9rem;border:1px solid color-mix(in srgb,var(--accent) 35%,transparent)}
-.hero-copy h1{font-family:var(--head);font-size:clamp(2rem,5vw,4.4rem);line-height:1.03;margin:0 0 12px;letter-spacing:.02em}
-.hero-copy p{margin:0;color:var(--muted);font-size:clamp(1rem,2vw,1.25rem);max-width:66ch}
-.stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
-.stat{background:color-mix(in srgb,var(--surface) 88%,transparent);border:1px solid color-mix(in srgb,var(--accent) 25%,transparent);padding:10px 14px;border-radius:14px;font-size:.95rem}
-.hero-media img{width:100%;height:100%;object-fit:cover}
-.hero.split{display:grid;grid-template-columns:1.1fr 1fr;align-items:stretch;min-height:540px}
-.hero.split .hero-copy{padding:56px}
-.hero.split .hero-media{min-height:420px}
-.hero.immersive{min-height:620px;display:grid;align-items:end}
-.hero.immersive::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.1) 0%, rgba(0,0,0,.65) 100%)}
-.hero.immersive .hero-bg{position:absolute;inset:0}
-.hero.immersive .hero-bg img{width:100%;height:100%;object-fit:cover;filter:saturate(1.08)}
-.hero.immersive .hero-copy{position:relative;z-index:1;padding:64px;color:#fff;max-width:760px}
-.hero.editorial{display:grid;grid-template-columns:1.1fr .9fr;gap:0;min-height:560px}
-.hero.editorial .hero-copy{padding:56px}
-.hero.editorial .stack{display:grid;grid-template-rows:1fr 1fr;gap:0}
-.hero.editorial .stack img{height:100%;object-fit:cover}
-.hero.neon{display:grid;grid-template-columns:1fr 1fr;min-height:560px;background:radial-gradient(circle at 20% 20%,color-mix(in srgb,var(--accent) 25%,transparent) 0%,transparent 35%),var(--grad)}
-.hero.neon .hero-copy{padding:56px}
-.hero.neon .hero-media{padding:24px;display:grid;place-items:center}
-.hero.neon .hero-media img{border-radius:22px;border:1px solid color-mix(in srgb,var(--accent) 35%,transparent);box-shadow:0 18px 45px var(--glow)}
-.section-title{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
-.section-title h2{font-family:var(--head);font-size:clamp(1.7rem,3vw,3rem);margin:0}
-.section-title p{margin:0;color:var(--muted)}
-.services{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
-.service{background:var(--surface);padding:20px;border-radius:18px;border:1px solid color-mix(in srgb,var(--accent) 18%,transparent);box-shadow:0 8px 20px color-mix(in srgb,var(--accent) 10%,transparent)}
-.service h3{margin:0;font-size:1.02rem}
-.gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
-.tile{grid-column:span 4;position:relative;border-radius:18px;overflow:hidden;min-height:220px}
-.tile:nth-child(1){grid-column:span 6;min-height:280px}
-.tile:nth-child(2){grid-column:span 3}
-.tile:nth-child(3){grid-column:span 3}
-.tile img{width:100%;height:100%;object-fit:cover;transition:transform .45s ease}
-.tile:hover img{transform:scale(1.05)}
-.info-wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}
-.card{background:var(--surface);padding:24px;border-radius:20px;border:1px solid color-mix(in srgb,var(--accent) 20%,transparent)}
-.card h3{font-family:var(--head);font-size:1.6rem;margin:0 0 10px}
-.list{display:grid;gap:10px}
-.list-item{display:flex;justify-content:space-between;gap:12px;padding-bottom:10px;border-bottom:1px dashed color-mix(in srgb,var(--accent) 24%,transparent)}
-.foot{padding:28px 5vw 38px;border-top:1px solid color-mix(in srgb,var(--accent) 25%,transparent);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:.92rem}
-.fade{opacity:0;transform:translateY(16px);animation:rise .8s ease forwards}
-.fade:nth-child(2){animation-delay:.1s}.fade:nth-child(3){animation-delay:.2s}.fade:nth-child(4){animation-delay:.3s}
-@keyframes rise{to{opacity:1;transform:translateY(0)}}
-@media (max-width:1024px){.services{grid-template-columns:repeat(2,minmax(0,1fr))}.hero.split,.hero.editorial,.hero.neon{grid-template-columns:1fr}.hero.editorial .stack{grid-template-columns:1fr 1fr;grid-template-rows:auto;min-height:260px}.info-wrap{grid-template-columns:1fr}}
-@media (max-width:720px){.topbar{padding:14px 4vw}.brand-logo{max-height:58px}.actions{width:100%;justify-content:flex-start}.hero .hero-copy{padding:28px}.hero.immersive .hero-copy{padding:32px}.gallery{grid-template-columns:1fr}.tile,.tile:nth-child(1),.tile:nth-child(2),.tile:nth-child(3){grid-column:1;min-height:230px}.services{grid-template-columns:1fr}.btn{padding:9px 14px;font-size:.9rem}}
-</style>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&family=Nunito+Sans:wght@300;400;600;700;800&family=Playfair+Display:wght@400;500;600;700&family=Questrial&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <div class="site">
-    <header class="topbar">
-      <div class="brand">
+<body class="pack-perihan hero-portrait">
+  <div class="site-preloader"><div class="preloader-ring"></div></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Esra Berge Beauty ana sayfa">
         <img class="brand-logo" src="assets/logo.png" alt="Esra Berge Beauty logo">
-        <div class="brand-name">Esra Berge Beauty</div>
-      </div>
-      <nav class="actions">
-        <a class="btn" href="#services">Hizmetler</a>
-        <a class="btn" href="#contact">İletişim</a>
-        <a class="btn primary" href="tel:+905013232307">📞 0501 323 23 07</a>
+        <strong class="brand-title">Esra Berge Beauty</strong>
+      </a>
+      <button class="menu-toggle" aria-label="Menü">Menü</button>
+      <nav class="nav" aria-label="Ana menü">
+        <a href="#services">Hizmetler</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#reviews">Yorumlar</a>
+        <a href="#faq">SSS</a>
+        <a class="cta" href="tel:+905013232307">📞 0501 323 23 07</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section class="hero editorial fade"><span class="badge">Beauty Salon</span><div class="hero-copy"><h1>Esra Berge Beauty</h1><p>Lazer epilasyon ve cilt bakımında deneyimli ekip ile butik stüdyo yaklaşımı.</p><div class="stats"><div class="stat">⭐ 4.6 / 5 · 33 yorum</div><div class="stat">Açık · 19:30’da kapanıyor</div></div></div><div class="stack"><img src="https://source.unsplash.com/1600x1000/?beauty,studio,softlight&sig=901" alt="Esra Berge Beauty ana görsel"><img src="https://source.unsplash.com/1400x1000/?laser,care,beauty&sig=902" alt="Esra Berge Beauty yan görsel"></div></section>
-
-      <section id="services" class="fade">
-        <div class="section-title">
-          <h2>Öne Çıkan Hizmetler</h2>
-          <p>“Merkezi lokasyon ve ilgili ekiple sakin, aile dostu bir ortam.”</p>
-        </div>
-        <div class="services"><article class="service"><h3>Lazer Epilasyon</h3></article>
-<article class="service"><h3>Skin Care</h3></article>
-<article class="service"><h3>Session Planning</h3></article>
-<article class="service"><h3>Nail &amp; Brow Touch</h3></article></div>
-      </section>
-
-      <section class="fade">
-        <div class="section-title">
-          <h2>Galeri</h2>
-          <p>Marka kimliğine uygun seçilmiş görseller</p>
-        </div>
-        <div class="gallery">
-          <figure class="tile"><img src="https://source.unsplash.com/1600x1000/?beauty,studio,softlight&sig=901" alt="Esra Berge Beauty galeri 1"></figure>
-<figure class="tile"><img src="https://source.unsplash.com/1400x1000/?laser,care,beauty&sig=902" alt="Esra Berge Beauty galeri 2"></figure>
-<figure class="tile"><img src="https://source.unsplash.com/1400x1000/?skin,care,salon&sig=903" alt="Esra Berge Beauty galeri 3"></figure>
-        </div>
-      </section>
-
-      <section id="contact" class="info-wrap fade">
-        <article class="card">
-          <h3>Konum & İletişim</h3>
-          <div class="list">
-            <div class="list-item"><span>Adres</span><strong>Sinanpaşa, Hasfırın Cd. Vidin İş Merkezi No:3 Kat:3 Daire:37, 34353 Beşiktaş/İstanbul</strong></div>
-            <div class="list-item"><span>Telefon</span><a href="tel:+905013232307"><strong>0501 323 23 07</strong></a></div>
-            <div class="list-item"><span>Plus Code</span><strong>22V4+6H Beşiktaş, İstanbul</strong></div>
-            <div class="list-item"><span>Durum</span><strong>Açık · 19:30’da kapanıyor</strong></div>
-            <div class="list-item"><span>Instagram</span><a href="https://instagram.com/esrabergebeauty" target="_blank" rel="noopener"><strong>@esrabergebeauty</strong></a></div>
+  <main class="page" id="top">
+    <section class="hero reveal">
+      <div class="hero-shell">
+        <div class="hero-copy">
+          <span class="hero-kicker">Beauty Salon · Beşiktaş</span>
+          <h1>Esra Berge Beauty</h1>
+          <p>Lazer epilasyon ve cilt bakımında lokasyon avantajı ve samimi ekip yaklaşımı.</p>
+          <div class="hero-pills">
+            <span class="hero-pill">⭐ 4.6 / 5</span>
+            <span class="hero-pill">33 yorum</span>
+            <span class="hero-pill">Açık · 19:30’da kapanıyor</span>
           </div>
-          <p style="margin-top:16px"><a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=Sinanpa%C5%9Fa%2C%20Hasf%C4%B1r%C4%B1n%20Cd.%20Vidin%20%C4%B0%C5%9F%20Merkezi%20No%3A3%20Kat%3A3%20Daire%3A37%2C%2034353%20Be%C5%9Fikta%C5%9F%2F%C4%B0stanbul" target="_blank" rel="noopener">📍 Haritada Aç</a></p>
-        </article>
+          <div class="hero-actions">
+            <a class="btn primary" href="#booking">Randevu Talebi</a>
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Sinanpa%C5%9Fa%2C%20Hasf%C4%B1r%C4%B1n%20Cd.%20Vidin%20%C4%B0%C5%9F%20Merkezi%20No%3A3%20Kat%3A3%20Daire%3A37%2C%2034353%20Be%C5%9Fikta%C5%9F%2F%C4%B0stanbul" target="_blank" rel="noopener">Haritada Aç</a>
+          </div>
+        </div>
 
-        <article class="card">
-          <h3>Hızlı Bilgi</h3>
-          <p>Esra Berge Beauty, Beauty Salon kategorisinde Beşiktaş bölgesinde hizmet vermektedir. Sayfadaki görsellerin bir kısmı işletmeye ait paylaşılan materyallerden, bir kısmı da sektörel temsil amaçlı yüksek çözünürlüklü görsellerden oluşturulmuştur.</p>
-          
-        </article>
-      </section>
-    </main>
+        <div class="hero-media">
+          <div class="hero-slider" aria-label="Esra Berge Beauty hero görselleri">
+            <article class="hero-slide active"><img src="https://source.unsplash.com/1600x1000/?beauty,salon,warm&sig=991" alt="Esra Berge Beauty hero 1"></article>
+            <article class="hero-slide"><img src="https://source.unsplash.com/1600x1000/?laser,beauty,clinic&sig=992" alt="Esra Berge Beauty hero 2"></article>
+            <article class="hero-slide"><img src="https://source.unsplash.com/1600x1000/?skin,beauty,woman&sig=993" alt="Esra Berge Beauty hero 3"></article>
+            <div class="hero-dots">
+              <button class="hero-dot active" aria-label="Slide 1"></button>
+              <button class="hero-dot" aria-label="Slide 2"></button>
+              <button class="hero-dot" aria-label="Slide 3"></button>
+            </div>
+          </div>
 
-    <footer class="foot">
+          <aside class="booking-card" id="booking">
+            <h3>Hızlı Randevu</h3>
+            <form id="bookingForm">
+              <div class="booking-grid">
+                <div class="field"><label>Ad Soyad</label><input name="name" type="text" required></div>
+                <div class="field"><label>Telefon</label><input name="phone" type="tel" required></div>
+                <div class="field full"><label>Hizmet</label><select name="service" required>
+                  <option value="">Hizmet seçin</option>
+                  <option value="Lazer Epilasyon">Lazer Epilasyon</option><option value="Skin Care">Skin Care</option><option value="Session Planning">Session Planning</option><option value="Nail Touch">Nail Touch</option><option value="Kaş Tasarım">Kaş Tasarım</option><option value="Bakım Paketleri">Bakım Paketleri</option>
+                </select></div>
+                <div class="field"><label>Tarih</label><input name="date" type="date"></div>
+                <div class="field full"><label>Not</label><textarea name="note" placeholder="Tercih ettiğiniz saat veya özel not"></textarea></div>
+              </div>
+              <button class="btn primary" type="submit">WhatsApp ile Gönder</button>
+              <p class="form-note">Mesaj doğrudan Esra Berge Beauty hattına iletilir.</p>
+            </form>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="section-head">
+        <h2>Salon Profili</h2>
+        <p>Esra Berge Beauty’de öne çıkan başlıklar; personel ilgisi, seans devamlılığı ve aile sıcaklığında hizmet deneyimi.</p>
+      </div>
+      <div class="kpis">
+        <article class="kpi"><strong data-count="33">0</strong><span>Yorum Sayısı</span></article>
+        <article class="kpi"><strong data-count="46">0</strong><span>Skor Endeksi</span></article>
+        <article class="kpi"><strong data-count="6">0</strong><span>Öne Çıkan Hizmet</span></article>
+        <article class="kpi"><strong data-count="365">0</strong><span>Yıllık Açık Gün</span></article>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="section-head reveal">
+        <h2>Hizmet Alanları</h2>
+        <p>İşletmenin yorumlarda öne çıkan başlıkları ve bakım ihtiyaçlarına göre seçilmiş hizmet dağılımı.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="icon">✨</div>
+          <h3>Lazer Epilasyon</h3>
+          <p>Esra Berge Beauty ekibi tarafından seans planına uygun şekilde uygulanır.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="icon">💆</div>
+          <h3>Skin Care</h3>
+          <p>Esra Berge Beauty ekibi tarafından seans planına uygun şekilde uygulanır.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="icon">🧴</div>
+          <h3>Session Planning</h3>
+          <p>Esra Berge Beauty ekibi tarafından seans planına uygun şekilde uygulanır.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="icon">🪞</div>
+          <h3>Nail Touch</h3>
+          <p>Esra Berge Beauty ekibi tarafından seans planına uygun şekilde uygulanır.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="icon">💅</div>
+          <h3>Kaş Tasarım</h3>
+          <p>Esra Berge Beauty ekibi tarafından seans planına uygun şekilde uygulanır.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="icon">🧬</div>
+          <h3>Bakım Paketleri</h3>
+          <p>Esra Berge Beauty ekibi tarafından seans planına uygun şekilde uygulanır.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head reveal">
+        <h2>İşlem Akışı</h2>
+        <p>Her işlemde danışmanlık, uygulama ve sonuç takibi adımları standartlaştırılır.</p>
+      </div>
+      <div class="treatment-steps">
+        <article class="step reveal">
+          <b>01</b>
+          <h3>Ön Görüşme</h3>
+          <p>İhtiyaç ve seans beklentisinin netleştirilmesi</p>
+        </article>
+        <article class="step reveal">
+          <b>02</b>
+          <h3>Uygulama Süreci</h3>
+          <p>Düzenli randevu ve işlem standardı</p>
+        </article>
+        <article class="step reveal">
+          <b>03</b>
+          <h3>Kontrol</h3>
+          <p>Uzun dönem memnuniyet odaklı takip</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="section-head reveal">
+        <h2>Galeri</h2>
+        <p>Yerel materyaller + sektörel yüksek çözünürlüklü görsellerle hazırlanmış vitrin.</p>
+      </div>
+      <div class="gallery-grid">
+          <figure class="gallery-item reveal">
+            <img src="https://source.unsplash.com/1600x1000/?beauty,salon,warm&sig=991" alt="Esra Berge Beauty galeri görsel 1">
+            <span>Esra Berge Beauty</span>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="https://source.unsplash.com/1600x1000/?laser,beauty,clinic&sig=992" alt="Esra Berge Beauty galeri görsel 2">
+            <span>Esra Berge Beauty</span>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="https://source.unsplash.com/1600x1000/?skin,beauty,woman&sig=993" alt="Esra Berge Beauty galeri görsel 3">
+            <span>Esra Berge Beauty</span>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="https://source.unsplash.com/1600x1000/?beauty,salon,warm&sig=991" alt="Esra Berge Beauty galeri görsel 4">
+            <span>Esra Berge Beauty</span>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="https://source.unsplash.com/1600x1000/?laser,beauty,clinic&sig=992" alt="Esra Berge Beauty galeri görsel 5">
+            <span>Esra Berge Beauty</span>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="https://source.unsplash.com/1600x1000/?skin,beauty,woman&sig=993" alt="Esra Berge Beauty galeri görsel 6">
+            <span>Esra Berge Beauty</span>
+          </figure>
+      </div>
+    </section>
+
+    <section id="reviews" class="reveal">
+      <div class="section-head">
+        <h2>Müşteri Yorumları</h2>
+        <p>Google yorumlarından derlenen öne çıkan geri bildirimler.</p>
+      </div>
+      <div class="testimonial-wrap">
+        <div class="testimonial-slider">
+          <article class="testimonial active">
+            <p>“Friendliness and service of staff made me truly pleased.”</p>
+            <h4>Özün Girgin</h4>
+          </article>
+          <article class="testimonial ">
+            <p>“Profesyonellik ve samimiyet kelimelerle anlatılmaz.”</p>
+            <h4>Beyza N. Kıraç</h4>
+          </article>
+          <article class="testimonial ">
+            <p>“Lazer sürecinde güven veren bir ekip yaklaşımı var.”</p>
+            <h4>Client Note</h4>
+          </article>
+        </div>
+        <div class="t-nav">
+          <button type="button" data-t-prev>Önceki</button>
+          <button type="button" data-t-next>Sonraki</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="reveal">
+      <div class="section-head">
+        <h2>Sık Sorulan Sorular</h2>
+        <p>Randevu ve işlem süreci hakkında hızlı referans noktaları.</p>
+      </div>
+      <div class="faq">
+        <article class="faq-item"><h3 class="faq-q">Randevu nasıl oluşturulur? <span>+</span></h3><div class="faq-a">Sayfadaki hızlı randevu formunu doldurarak WhatsApp üzerinden doğrudan iletebilirsiniz.</div></article>
+        <article class="faq-item"><h3 class="faq-q">Konum bilgisi nerede? <span>+</span></h3><div class="faq-a">Adres bölümündeki “Haritada Aç” bağlantısı ile doğrudan yol tarifi alabilirsiniz.</div></article>
+        <article class="faq-item"><h3 class="faq-q">Hangi saat aralığında hizmet var? <span>+</span></h3><div class="faq-a">Güncel çalışma bilgisi: Açık · 19:30’da kapanıyor.</div></article>
+      </div>
+    </section>
+
+    <section class="contact-grid reveal">
+      <article class="card">
+        <h2>İletişim</h2>
+        <div class="detail-list">
+          <div class="detail"><small>Adres</small><strong>Sinanpaşa, Hasfırın Cd. Vidin İş Merkezi No:3 Kat:3 Daire:37, 34353 Beşiktaş/İstanbul</strong></div>
+          <div class="detail"><small>Telefon</small><a href="tel:+905013232307"><strong>0501 323 23 07</strong></a></div>
+          <div class="detail"><small>Plus Code</small><strong>22V4+6H Beşiktaş, İstanbul</strong></div>
+          <div class="detail"><small>Kategori</small><strong>Beauty Salon</strong></div>
+        </div>
+        <p style="margin-top:14px"><a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=Sinanpa%C5%9Fa%2C%20Hasf%C4%B1r%C4%B1n%20Cd.%20Vidin%20%C4%B0%C5%9F%20Merkezi%20No%3A3%20Kat%3A3%20Daire%3A37%2C%2034353%20Be%C5%9Fikta%C5%9F%2F%C4%B0stanbul" target="_blank" rel="noopener">📍 Haritada Aç</a></p>
+      </article>
+
+      <article class="card">
+        <h2>Notlar</h2>
+        <p>Bu landing page, verilen işletme bilgileri ve paylaşılan görseller kullanılarak marka görünürlüğü için düzenlenmiştir.</p>
+        
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
       <span>© 2026 Esra Berge Beauty</span>
       <span>Beauty Salon · Beşiktaş / İstanbul</span>
-    </footer>
-  </div>
+      <a href="tel:+905013232307">0501 323 23 07</a>
+    </div>
+  </footer>
+
+  <aside class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Kapat">Kapat</button>
+    <img src="" alt="Galeri görseli">
+  </aside>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
